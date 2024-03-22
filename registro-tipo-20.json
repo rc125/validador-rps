@@ -1,0 +1,500 @@
+{
+    "ordem": 1,
+    "campo": "Tipo do registro",
+    "posicao_inicial": 1,
+    "posicao_final": 2,
+    "tamanho": 2,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "S",
+    "conteudo": "Deve ser preenchido com valor “20”, indicando linha de detalhe."
+  },
+  {
+    "ordem": 2,
+    "campo": "Tipo do RPS",
+    "posicao_inicial": 3,
+    "posicao_final": 3,
+    "tamanho": 1,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "S",
+    "conteudo": "Informe o Tipo do RPS emitido com 01 posição. Tipos Válidos: 0 – Recibo Provisório de Serviços (RPS); 1 – Recibo Provisório de Serviços proveniente de Nota Fiscal Conjugada/ Mista (RPS-M)."
+  },
+  {
+    "ordem": 3,
+    "campo": "Série do RPS",
+    "posicao_inicial": 4,
+    "posicao_final": 8,
+    "tamanho": 5,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Informe a Série do RPS com 05 posições."
+  },
+  {
+    "ordem": 4,
+    "campo": "Número do RPS",
+    "posicao_inicial": 9,
+    "posicao_final": 23,
+    "tamanho": 15,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "S",
+    "conteudo": "Informe o Número do RPS com 15 posições."
+  },
+  {
+    "ordem": 5,
+    "campo": "Data de Emissão do RPS",
+    "posicao_inicial": 24,
+    "posicao_final": 31,
+    "tamanho": 8,
+    "formato": "AAAAMMDD",
+    "preenchimento_obrigatorio": "S",
+    "conteudo": "Informe a Data de emissão do RPS no formato AAAAMMDD."
+  },
+  {
+    "ordem": 6,
+    "campo": "Status do RPS",
+    "posicao_inicial": 32,
+    "posicao_final": 32,
+    "tamanho": 1,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "S",
+    "conteudo": "Status do RPS: 1 – Normal; 2 – Cancelado."
+  },
+  {
+    "ordem": 7,
+    "campo": "Identificação de CPF ou CNPJ do Tomador de Serviços",
+    "posicao_inicial": 33,
+    "posicao_final": 33,
+    "tamanho": 1,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "S",
+    "conteudo": "Este campo indica o tipo de dados fornecido no campo CPF/CNPJ do Tomador. Informe um dos seguintes valores: 1 - CPF; 2 - CNPJ; 3 - Não Informado."
+  },
+  {
+    "ordem": 8,
+    "campo": "CPF ou CNPJ do Tomador de Serviços",
+    "posicao_inicial": 34,
+    "posicao_final": 47,
+    "tamanho": 14,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "S",
+    "conteudo": "CNPJ do Tomador com 14 posições ou CPF do Tomador com 11 posições. Sem formatação (ponto, traço, barra...). ATENÇÃO! Caso não possua o CPF/CNPJ do tomador, utilize a opção 3 (Não informado) no campo 7 e preencha este campo com “00000000000000”"
+  },
+  {
+    "ordem": 9,
+    "campo": "Inscrição Municipal do Tomador",
+    "posicao_inicial": 48,
+    "posicao_final": 62,
+    "tamanho": 15,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Inscrição Municipal do Tomador, com 15 posições. ATENÇÃO!!! Este campo só deverá ser preenchido para tomadores estabelecidos neste município. Quando este campo for preenchido, seu conteúdo será considerado como prioritário com relação ao campo de CPF/CNPJ do Tomador, sendo utilizado para identificar o Tomador e recuperar seus dados da base de dados da Prefeitura."
+  },
+  {
+    "ordem": 10,
+    "campo": "Inscrição Estadual do Tomador",
+    "posicao_inicial": 63,
+    "posicao_final": 77,
+    "tamanho": 15,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Inscrição Estadual do Tomador, com 15 posições."
+  },
+  {
+    "ordem": 11,
+    "campo": "Nome/Razão Social do Tomador",
+    "posicao_inicial": 78,
+    "posicao_final": 192,
+    "tamanho": 115,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "S (PJ)",
+    "conteudo": "Razão Social do Tomador."
+  },
+  {
+    "ordem": 12,
+    "campo": "Tipo do Endereço do Tomador (Rua, Av....)",
+    "posicao_inicial": 193,
+    "posicao_final": 195,
+    "tamanho": 3,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "S (PJ)",
+    "conteudo": "Tipo do Endereço do Tomador."
+  },
+  {
+    "ordem": 13,
+    "campo": "Endereço do Tomador",
+    "posicao_inicial": 196,
+    "posicao_final": 320,
+    "tamanho": 125,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "S (PJ)",
+    "conteudo": "Endereço do Tomador."
+  },
+  {
+    "ordem": 14,
+    "campo": "Número do Endereço do Tomador",
+    "posicao_inicial": 321,
+    "posicao_final": 330,
+    "tamanho": 10,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Número do Endereço do Tomador."
+  },
+  {
+    "ordem": 15,
+    "campo": "Complemento do Endereço do Tomador",
+    "posicao_inicial": 331,
+    "posicao_final": 390,
+    "tamanho": 60,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Complemento do Endereço do Tomador."
+  },
+  {
+    "ordem": 16,
+    "campo": "Bairro do Tomador",
+    "posicao_inicial": 391,
+    "posicao_final": 462,
+    "tamanho": 72,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "S (PJ)",
+    "conteudo": "Bairro do Tomador"
+  },
+  {
+    "ordem": 17,
+    "campo": "Cidade do Tomador",
+    "posicao_inicial": 463,
+    "posicao_final": 512,
+    "tamanho": 50,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "S (PJ)",
+    "conteudo": "Cidade do Tomador."
+  },
+  {
+    "ordem": 18,
+    "campo": "UF do Tomador",
+    "posicao_inicial": 513,
+    "posicao_final": 514,
+    "tamanho": 2,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "S (PJ)",
+    "conteudo": "UF do Tomador."
+  },
+  {
+    "ordem": 19,
+    "campo": "CEP do Tomador",
+    "posicao_inicial": 515,
+    "posicao_final": 522,
+    "tamanho": 8,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "S (PJ)",
+    "conteudo": "CEP do Tomador."
+  },
+  {
+    "ordem": 20,
+    "campo": "Telefone de Contato do Tomador",
+    "posicao_inicial": 523,
+    "posicao_final": 533,
+    "tamanho": 11,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Telefone de Contato do Tomador."
+  },
+  {
+    "ordem": 21,
+    "campo": "E-mail do Tomador",
+    "posicao_inicial": 534,
+    "posicao_final": 613,
+    "tamanho": 80,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "E-mail do Tomador."
+  },
+  {
+    "ordem": 22,
+    "campo": "Tipo de Tributação de Serviços",
+    "posicao_inicial": 614,
+    "posicao_final": 615,
+    "tamanho": 2,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "S",
+    "conteudo": "Tributação de Serviços da Nota: 01 - Tributação no Município; 02 - Tributação Fora do Município; 03 - Operação Isenta; 04 - Operação Imune; 05 - Operação Suspensa por Decisão Judicial;"
+  },
+  {
+    "ordem": 23,
+    "campo": "Cidade de Prestação do Serviço",
+    "posicao_inicial": 616,
+    "posicao_final": 665,
+    "tamanho": 50,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "S",
+    "conteudo": "Cidade onde o Serviço foi prestado."
+  },
+  {
+    "ordem": 24,
+    "campo": "UF de Prestação do Serviço",
+    "posicao_inicial": 666,
+    "posicao_final": 667,
+    "tamanho": 2,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "S",
+    "conteudo": "UF onde o Serviço foi prestado."
+  },
+  {
+    "ordem": 25,
+    "campo": "Regime Especial de Tributação",
+    "posicao_inicial": 668,
+    "posicao_final": 669,
+    "tamanho": 2,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "S",
+    "conteudo": "Preencher com: 00 - Nenhum; 03 - Sociedade Simples"
+  },
+  {
+    "ordem": 26,
+    "campo": "Opção Pelo Simples",
+    "posicao_inicial": 670,
+    "posicao_final": 670,
+    "tamanho": 1,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "S",
+    "conteudo": "Opção pelo Simples Nacional do Prestador de Serviços: 0 - Não-Optante pelo Simples Nacional; 1 - Optante pelo Simples Nacional (Recolhimento pelo DAS); 2 – Optante pelo Simples Municipal (Recolhimento pelo DAM)."
+  },
+  {
+    "ordem": 27,
+    "campo": "Incentivo Cultural",
+    "posicao_inicial": 671,
+    "posicao_final": 671,
+    "tamanho": 1,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "S",
+    "conteudo": "Preencher com “0”"
+  },
+  {
+    "ordem": 28,
+    "campo": "Item da Lista de Serviços-LC 116/03 (Código do Serviço Federal)",
+    "posicao_inicial": 672,
+    "posicao_final": 675,
+    "tamanho": 4,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "S",
+    "conteudo": "Item da Lista de Serviços (anexo LC 116/03). O campo deve ser preenchido sem formatação. Exemplo: \"07.20\" será \"0720\""
+  },
+  {
+    "ordem": 29,
+    "campo": "CNAE - Código da Classificação Nacional de Atividades Econômicas (Código do Serviço Municipal)",
+    "posicao_inicial": 676,
+    "posicao_final": 695,
+    "tamanho": 20,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "S",
+    "conteudo": "CNAE (Código da Classificação Nacional de Atividades Econômicas). O campo deve ser preenchido sem formatação. Exemplo: 6209100 será \"00000000000006209100\""
+  },
+  {
+    "ordem": 30,
+    "campo": "Alíquota",
+    "posicao_inicial": 696,
+    "posicao_final": 700,
+    "tamanho": 5,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "S",
+    "conteudo": "Valor da Alíquota, incluindo duas casas decimais (sem ponto decimal e sem %) com 5 posições. Exemplo: 105,00% – 10500; 2,75% – 00275"
+  },
+  {
+    "ordem": 31,
+    "campo": "Valor dos Serviços",
+    "posicao_inicial": 701,
+    "posicao_final": 715,
+    "tamanho": 15,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "S",
+    "conteudo": "Valor dos Serviços da nota fiscal, incluindo os centavos (sem ponto decimal e sem R$), com 15 posições. Exemplo: R$ 500,85 – 000000000050085; R$ 500,00 – 000000000050000. Caso a situação da nota seja igual a “2” (Cancelada), as 15 posições poderão estar preenchidas com zeros."
+  },
+  {
+    "ordem": 32,
+    "campo": "Valor das Deduções",
+    "posicao_inicial": 716,
+    "posicao_final": 730,
+    "tamanho": 15,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Valor das Deduções da nota fiscal, incluindo os centavos (sem ponto decimal e sem R$), com 15 posições. Exemplo: R$ 500,85 – 000000000050085; R$ 500,00 – 000000000050000"
+  },
+  {
+    "ordem": 33,
+    "campo": "Valor do Desconto Condicionado",
+    "posicao_inicial": 731,
+    "posicao_final": 745,
+    "tamanho": 15,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Valor dos Descontos Condicionados da nota fiscal, incluindo os centavos (sem ponto decimal e sem R$), com 15 posições. O Desconto Condicionado não altera a base de cálculo. Exemplo: R$ 500,85 – 000000000050085; R$ 500,00 – 000000000050000"
+  },
+  {
+    "ordem": 34,
+    "campo": "Valor do Desconto Incondicionado",
+    "posicao_inicial": 746,
+    "posicao_final": 760,
+    "tamanho": 15,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Valor dos Descontos Incondicionados da nota fiscal, incluindo os centavos (sem ponto decimal e sem R$), com 15 posições. O Desconto incondicionado altera a base de cálculo. Exemplo: R$ 500,85 – 000000000050085; R$ 500,00 – 000000000050000"
+  },
+  {
+    "ordem": 35,
+    "campo": "Valor COFINS",
+    "posicao_inicial": 761,
+    "posicao_final": 775,
+    "tamanho": 15,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Valor da retenção de COFINS da nota fiscal, incluindo os centavos (sem ponto decimal e sem R$), com 15 posições. Exemplo: R$ 500,85 – 000000000050085; R$ 500,00 – 000000000050000"
+  },
+  {
+    "ordem": 36,
+    "campo": "Valor CSLL",
+    "posicao_inicial": 776,
+    "posicao_final": 790,
+    "tamanho": 15,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Valor da retenção de CSLL da nota fiscal, incluindo os centavos (sem ponto decimal e sem R$), com 15 posições. Exemplo: R$ 500,85 – 000000000050085; R$ 500,00 – 000000000050000"
+  },
+  {
+    "ordem": 37,
+    "campo": "Valor INSS",
+    "posicao_inicial": 791,
+    "posicao_final": 805,
+    "tamanho": 15,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Valor da retenção de INSS da nota fiscal, incluindo os centavos (sem ponto decimal e sem R$), com 15 posições. Exemplo: R$ 500,85 – 000000000050085; R$ 500,00 – 000000000050000"
+  },
+  {
+    "ordem": 38,
+    "campo": "Valor IRPJ",
+    "posicao_inicial": 806,
+    "posicao_final": 820,
+    "tamanho": 15,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Valor da retenção de IRPJ da nota fiscal, incluindo os centavos (sem ponto decimal e sem R$), com 15 posições. Exemplo: R$ 500,85 – 000000000050085; R$ 500,00 – 000000000050000"
+  },
+  {
+    "ordem": 39,
+    "campo": "Valor PIS/PASEP",
+    "posicao_inicial": 821,
+    "posicao_final": 835,
+    "tamanho": 15,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Valor da retenção de PIS/PASEP da nota fiscal, incluindo os centavos (sem ponto decimal e sem R$), com 15 posições. Exemplo: R$ 500,85 – 000000000050085; R$ 500,00 – 000000000050000"
+  },
+  {
+    "ordem": 40,
+    "campo": "Valor de Outras Retenções Federais",
+    "posicao_inicial": 836,
+    "posicao_final": 850,
+    "tamanho": 15,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Valor de outras retenções federais da nota fiscal, incluindo os centavos (sem ponto decimal e sem R$), com 15 posições. Exemplo: R$ 500,85 – 000000000050085; R$ 500,00 – 000000000050000"
+  },
+  {
+    "ordem": 41,
+    "campo": "Valor do ISS",
+    "posicao_inicial": 851,
+    "posicao_final": 865,
+    "tamanho": 15,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Valor do ISS da nota fiscal, incluindo os centavos (sem ponto decimal e sem R$), com 15 posições. Exemplo: R$ 500,85 – 000000000050085; R$ 500,00 – 000000000050000"
+  },
+  {
+    "ordem": 42,
+    "campo": "ISS Retido",
+    "posicao_inicial": 866,
+    "posicao_final": 866,
+    "tamanho": 1,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "S",
+    "conteudo": "Retenção do ISS: 0 - Nota Fiscal sem ISS Retido; 1 - ISS Retido."
+  },
+  {
+    "ordem": 43,
+    "campo": "Data de Competência",
+    "posicao_inicial": 867,
+    "posicao_final": 874,
+    "tamanho": 8,
+    "formato": "AAAAMMDD",
+    "preenchimento_obrigatorio": "S",
+    "conteudo": "Utilize a data de emissão do RPS em caso de ISS não retido e a data para pagamento em caso de ISS retido."
+  },
+  {
+    "ordem": 44,
+    "campo": "Código da Obra",
+    "posicao_inicial": 875,
+    "posicao_final": 889,
+    "tamanho": 15,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "N/S",
+    "conteudo": "Código CEI / Código da Obra para serviços de construção civil. Alguns códigos de Serviço Municipal exigem o preenchimento deste campo. Informe o código CEI (com dv). Se a obra não possui CEI, digite \"CO\" seguido do código da obra."
+  },
+  {
+    "ordem": 45,
+    "campo": "Anotação de Responsabilidade Técnica",
+    "posicao_inicial": 890,
+    "posicao_final": 904,
+    "tamanho": 15,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Anotação de Responsabilidade Técnica para serviços de construção civil."
+  },
+  {
+    "ordem": 46,
+    "campo": "Série do RPS Substituído",
+    "posicao_inicial": 905,
+    "posicao_final": 909,
+    "tamanho": 5,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Série do RPS substituído caso seja um RPS substituto"
+  },
+  {
+    "ordem": 47,
+    "campo": "Número do RPS Substituído",
+    "posicao_inicial": 910,
+    "posicao_final": 924,
+    "tamanho": 15,
+    "formato": "Numérico",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Número do RPS substituído caso seja um RPS substituto"
+  },
+  {
+    "ordem": 48,
+    "campo": "Reservado",
+    "posicao_inicial": 925,
+    "posicao_final": 954,
+    "tamanho": 30,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Preencher com brancos"
+  },
+  {
+    "ordem": 49,
+    "campo": "Discriminação dos Serviços",
+    "posicao_inicial": 925,
+    "posicao_final": 954,
+    "tamanho": 30,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "N",
+    "conteudo": "Preencher com brancos"
+  },
+  {
+    "ordem": 48,
+    "campo": "Reservado",
+    "posicao_inicial": 955,
+    "posicao_final": 4955,
+    "tamanho": 4000,
+    "formato": "Texto",
+    "preenchimento_obrigatorio": "S",
+    "conteudo": "Descritivo dos serviços. Texto contínuo. O conjunto de caracteres correspondentes ao código ASC 13 e ASC 10 (Chr(13) + Chr(10)) deverá ser substituído pelo caractere | (pipe ou barra vertical. ASC 124)"
+  }
