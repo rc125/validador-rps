@@ -8,11 +8,11 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
-  
+
   <script>
 
 angular.module('rpsApp', [])
-  .controller('RpsController', function($scope) {
+  .controller('RpsController', function($scope, $http) {
 
     $scope.linha20 = "";
 
@@ -20,7 +20,13 @@ angular.module('rpsApp', [])
         return $scope.linha20.substring(posicaoInicial - 1, posicaoFinal);
     }
 
-    $scope.campos = [];
+    $scope.camposLinha20 = [];
+    $scope.urlJsonLinha20 = 'https://raw.githubusercontent.com/rc125/validador-rps/main/registro-tipo-20.json';
+
+    $http.get($scope.urlJsonLinha20).then(function(response) {
+      $scope.camposLinha20 = response.data;
+      console.log($scope.camposLinha20)
+    });
 
   });
 
@@ -45,7 +51,7 @@ angular.module('rpsApp', [])
                           <input name="linha20" type="text" ng-model="linha20" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                         </div>
                       </div>
-                    <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0" ng-repeat="item in campos">
+                    <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0" ng-repeat="item in camposLinha20 track by $index">
                       <dt class="text-sm ">
                         <p class="font-medium leading-6 text-gray-900">{{item.campo}}</p>  
                         <span class="text-gray-400">{{item.conteudo}}</span>
