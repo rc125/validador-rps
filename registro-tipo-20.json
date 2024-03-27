@@ -1,4 +1,5 @@
-{
+[ 
+  {
     "ordem": 1,
     "campo": "Tipo do registro",
     "posicao_inicial": 1,
@@ -489,7 +490,7 @@
     "conteudo": "Preencher com brancos"
   },
   {
-    "ordem": 48,
+    "ordem": 50,
     "campo": "Reservado",
     "posicao_inicial": 955,
     "posicao_final": 4955,
@@ -498,3 +499,4 @@
     "preenchimento_obrigatorio": "S",
     "conteudo": "Descritivo dos serviços. Texto contínuo. O conjunto de caracteres correspondentes ao código ASC 13 e ASC 10 (Chr(13) + Chr(10)) deverá ser substituído pelo caractere | (pipe ou barra vertical. ASC 124)"
   }
+]
